@@ -49,38 +49,3 @@ button:hover {
   text-align: center;
   color: rgb(123, 33, 126);
 }
-/*.gryffondor {
-  background-image: linear-gradient(120deg, gray, rgb(197, 28, 28));
-  color: antiquewhite;
-  font-family: "Oswald", sans-serif;
-  min-height: 100vh;
-  text-align: center;
-}
-.serpentard {
-  background-image: linear-gradient(120deg, gray, rgb(15, 163, 59));
-  color: antiquewhite;
-  font-family: "Oswald", sans-serif;
-  min-height: 100vh;
-  text-align: center;
-}
-.poufsouffle {
-  background-image: linear-gradient(120deg, gray, rgb(211, 224, 19));
-  color: antiquewhite;
-  font-family: "Oswald", sans-serif;
-  min-height: 100vh;
-  text-align: center;
-}
-.serdaigle {
-  background-image: linear-gradient(120deg, gray, rgb(23, 35, 207));
-  color: antiquewhite;
-  font-family: "Oswald", sans-serif;
-  min-height: 100vh;
-  text-align: center;
-}
-.default {
-  background-image: linear-gradient(120deg, gray, rgb(123, 33, 126));
-  color: antiquewhite;
-  font-family: "Oswald", sans-serif;
-  min-height: 100vh;
-  text-align: center;
-}

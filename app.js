@@ -41,7 +41,7 @@ function changeBackGroundColor(id) {
         case "Harry Potter":
         case "Hermione Granger":
         case "Neville Londubat":
-            color = "rgb(197, 28, 28)";
+            color = "#d62121";
         break;
         case "Tom Jedusor":
         case "Severus Rogue":
@@ -49,7 +49,7 @@ function changeBackGroundColor(id) {
         case "Bellatrix Lestrange":
         case "Drago Malefoy":
         case "Regulus Black":
-            color = "rgb(15, 163, 59)";
+            color = "#57a634";
         break;
         case "Cedric Diggory":
         case "Norbert Dragonneau":
@@ -57,7 +57,7 @@ function changeBackGroundColor(id) {
         case "Nymphadora Tonks":
         case "Ted Lupin":
         case "Pomona Chourave":
-            color = "rgb(211, 224, 19)";
+            color = "#ebe14a";
         break;
         case "Luna Lovegood":
         case "Cho Chang":
@@ -65,7 +65,7 @@ function changeBackGroundColor(id) {
         case "Gilderoy Lockhart":
         case "Filius Flitwick":
         case "Mimi Geignarde":
-            color = "rgb(23, 35, 207)";
+            color = "#2d58db";
         break;
         }
 return color;
