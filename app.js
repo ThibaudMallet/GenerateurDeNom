@@ -1,75 +1,72 @@
 // Liste des noms des personnages de Harry Potter : 
 // Ron Weasley, Ginny Weasley, Romilda Vane, Harry Potter, Hermione Granger, Neville Londubat
 // Tom Jedusor, Severus Rogue, Dolores Ombrage, Bellatrix Lestrange, Drago Malefoy, Regulus Black
-// Cedric Diggory, Norbert Dragonneau, Susan Bones, Nymphadora Tonks, Norbert Dragonneau, Pomona Chourave
+// Cedric Diggory, Norbert Dragonneau, Susan Bones, Nymphadora Tonks, Ted Lupin, Pomona Chourave
 // Luna Lovegood, Cho Chang, Quirinus Quirrell, Gilderoy Lockhart, Filius Flitwick, Mimi Geignarde
 
 //CONST
-const NameButton = document.querySelector(".name-button");
-const ResetButton = document.querySelector(".reset-button");
-let Name = ["Ron Weasley", "Ginny Weasley", "Romilda Vane", "Harry Potter", "Hermione Granger", "Neville Londubat", "Tom Jedusor", "Severus Rogue", "Dolores Ombrage", "Bellatrix Lestrange", "Drago Malefoy", "Regulus Black", "Cedric Diggory", "Norbert Dragonneau", "Susan Bones", "Nymphadora Tonks", "Norbert Dragonneau", "Pomona Chourave", "Luna Lovegood", "Cho Chang", "Quirinus Quirrell", "Gilderoy Lockhart", "Filius Flitwick", "Mimi Geignarde"];
+const nameButton = document.querySelector(".name-button");
+const resetButton = document.querySelector(".reset-button");
+const body = document.body;
+let name = ["Ron Weasley", "Ginny Weasley", "Romilda Vane", "Harry Potter", "Hermione Granger", "Neville Londubat", "Tom Jedusor", "Severus Rogue", "Dolores Ombrage", "Bellatrix Lestrange", "Drago Malefoy", "Regulus Black", "Cedric Diggory", "Norbert Dragonneau", "Susan Bones", "Nymphadora Tonks", "Norbert Dragonneau", "Pomona Chourave", "Luna Lovegood", "Cho Chang", "Quirinus Quirrell", "Gilderoy Lockhart", "Filius Flitwick", "Mimi Geignarde"];
 
 //LISTENER
-NameButton.addEventListener("click", AddName);
-ResetButton.addEventListener("click", ResetName);
-//body.addEventListener("click", background);
+nameButton.addEventListener("click", addName);
+resetButton.addEventListener("click", resetName);
 
 //FUNCTION
 //Générer un nom à partir du tableau
-function GenerateName(Name) {
-    return Name[Math.floor(Math.random() * 24)];
+function generateName(name) {
+    return name[Math.floor(Math.random() * 24)];
 }
-// Afficher le nom défini aléatoirement
-function AddName(event) {
-    document.getElementById("input").value = GenerateName(Name);
+function addName(event) {
+    let id = generateName(name);
+
+    document.getElementById("input").value = id;
+    body.style.backgroundColor = changeBackGroundColor(id);
 }
 //Reset le nom
-function ResetName(event) {
+function resetName(event) {
     document.getElementById("input").value = "";
+    body.style.backgroundColor = "gray";
 }
+//Changer le backGround en fonction du nom
+function changeBackGroundColor(id) {
+    color = "gray";
 
-
-
-
-
-
-
-
-
-
-
-
-/*function GetInput() {
-    const getInput = input.value;
-    console.log(getInput);
+    switch (id) {
+        case "Ron Weasley":
+        case "Ginny Weasley":
+        case "Romilda Vane":
+        case "Harry Potter":
+        case "Hermione Granger":
+        case "Neville Londubat":
+            color = "rgb(197, 28, 28)";
+        break;
+        case "Tom Jedusor":
+        case "Severus Rogue":
+        case "Dolores Ombrage":
+        case "Bellatrix Lestrange":
+        case "Drago Malefoy":
+        case "Regulus Black":
+            color = "rgb(15, 163, 59)";
+        break;
+        case "Cedric Diggory":
+        case "Norbert Dragonneau":
+        case "Susan Bones":
+        case "Nymphadora Tonks":
+        case "Ted Lupin":
+        case "Pomona Chourave":
+            color = "rgb(211, 224, 19)";
+        break;
+        case "Luna Lovegood":
+        case "Cho Chang":
+        case "Quirinus Quirrell":
+        case "Gilderoy Lockhart":
+        case "Filius Flitwick":
+        case "Mimi Geignarde":
+            color = "rgb(23, 35, 207)";
+        break;
+        }
+return color;
 }
-
-
-
-//Changer le background selon le nom défini
-/*function background() {
-    if (GetInput() === "Ron Weasley") {
-        body.classList.add("gryffondor");
-    } else if (GenerateName(Name) === Name[7, 8, 9, 10, 11, 12]) {
-        body.classList.add("serpentard");
-    } else if (GenerateName(Name) === Name[13, 14, 15, 16, 17, 18]) {
-        body.classList.add("poufsouffle");
-    } else
-        body.classList.add("serdaigle");
-    }
-/*function changeBackground() {
-    if (GenerateName(Name) === Name[0, 1, 2, 3, 4, 5]) {
-    body.classList.add("gryffondor");
-} else if (GenerateName(Name) === Name[6, 7, 8, 9, 10, 11]) {
-    body.classList.add("serpentard");
-} else if (GenerateName(Name) === Name[12, 13, 14, 15, 16, 17]) {
-    body.classList.add("poufsouffle");
-} else
-    body.classList.add("serdaigle");
-}
-function background() {
-    document.body.style.backgroundImage = "linear-gradient(120deg, gray, rgb(23, 35, 207))";
-}
-*/
-
-
