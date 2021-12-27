@@ -7,4 +7,6 @@ Ici des noms des écoliers de Poudlard.
 
 2 -Ensuite c'est de modifier le background en fonction de l'école du nom généré. ok
 
-3-Ensuite c'est d'insérer un message sous l'input en disant "bienvenue à "l'école appropriée"".
+3-Ensuite c'est d'insérer un message sous l'input en disant "bienvenue à "l'école appropriée"". ok
+
+4- ??

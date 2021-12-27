@@ -49,3 +49,8 @@ button:hover {
   text-align: center;
   color: rgb(123, 33, 126);
 }
+.txt {
+  color: black;
+  margin-top: 50px;
+  font-size: 3rem;
+}
